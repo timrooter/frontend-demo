@@ -32,7 +32,7 @@ function App() {
               <Route path='/transactions/transfer' element={<PrivateRoute><Transfer /></PrivateRoute>} />
               <Route path='/transactions/qr-request' element={<PrivateRoute><QRRequest/></PrivateRoute>} />
               <Route path='/transactions/success' element={<PrivateRoute><TransactionSuccess/></PrivateRoute>} />
-              <Route path='/transactions/scan-qr' element={<PrivateRoute><ScanQR /></PrivateRoute>} />
+              <Route path='/transactions/scan-qr' element={<ScanQR />} />
               <Route path='/transactions/history' element={<PrivateRoute><TransactionsList /></PrivateRoute>} />
             <Route path='/transactions/card' element={<PrivateRoute><UserBankCard /></PrivateRoute>} />
             <Route path='/confirm-transaction' element={<ConfirmTransaction />} />
